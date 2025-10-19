@@ -34,7 +34,9 @@ This repository contains my solutions for the **University of Helsinki’s MOOC.
    - Arrays
    - Strings
 
-
+4. **Part 4**
+   - Introduction to Object-Oriented Programming.
+   - Objects in a list
 ---
 
 ## 🧠 My Goals
