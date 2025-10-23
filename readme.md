@@ -37,6 +37,8 @@ This repository contains my solutions for the **University of Helsinki’s MOOC.
 4. **Part 4**
    - Introduction to Object-Oriented Programming.
    - Objects in a list
+   - Files and Reading data
+   - Summary
 ---
 
 ## 🧠 My Goals
