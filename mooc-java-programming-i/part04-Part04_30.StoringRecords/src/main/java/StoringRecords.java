@@ -16,13 +16,25 @@ public class StoringRecords {
         System.out.println("Persons:");
         for (Person person : records) {
             System.out.println(person);
-
+            
         }
     }
 
     public static ArrayList<Person> readRecordsFromFile(String file) {
         ArrayList<Person> persons = new ArrayList<>();
-
+        try{
+            Scanner recordsFile = new Scanner(Paths.get(file));
+            while(recordsFile.hasNextLine()){
+                String row = recordsFile.nextLine();
+                String[] parts = row.split(",");
+                String name = parts[0];
+                int age = Integer.valueOf(parts[1]);
+                Person currentPerson = new Person(name, age);
+                persons.add(currentPerson);
+            }
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
         // Write here the code for reading from file
         // and printing the read records
         return persons;
